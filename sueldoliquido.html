@@ -50,7 +50,7 @@
                     <form class="fw-light">
                         <div class="mb-3">
                             <label for="salario" class="form-label">Salario</label>
-                            <input type="number" class="form-control " id="salario" aria-describedby="emailHelp">
+                            <input type="number" class="form-control " id="salario">
                         </div>
                         <div class="mb-3">
                             <label for="bonificacion" class="form-label">Bonificación</label>
@@ -60,7 +60,7 @@
                             <label for="comisiones" class="form-label ">Comisiones</label>
                             <input type="number" class="form-control" id="comisiones" value="">
                             <br>
-                            <p>Total ganado: <span id="totalGanado"></span></p>
+                            <p id="totalGanado">Total ganado:</p>
                         </div>
                     </form>
                 </div>
@@ -72,14 +72,13 @@
                         </div>
                         <div class="mb-3">
                             <label for="igss" class="form-label">IGSS</label>
-                            <input type="number" class="form-control" id="igss" value="">
-                        </div>
+                            <label id="igss" class="form-control"></label>                        </div>
                         <div class="mb-3">
                             <label for="prestamos" class="form-label ">Prestamos/Otros descuentos</label>
                             <input type="number" class="form-control" id="prestamos" value="">
 
                             <br>
-                            <p>Total descuentos: <span id="totalDescuentos"></span></p>
+                            <p id="totalDescuentos">Total descuentos:</p>
                         </div>
                     </form>
                 </div>
@@ -87,10 +86,10 @@
 
 
             <div class="w-100 text-center">
-                <button type="button" class="btn btn-primary fw-medium" id="btnCalcular">Obtener Sueldo Líquido</button>
+                <button type="button" class="btn btn-primary fw-medium" id="btnCalcular" onclick="Totales()">Obtener Sueldo Líquido</button>
             </div>
             <div class="w-100 text-center">
-                <p class=" ">Sueldo líquido: <span id="sueldoLiquido"></span></p>
+                <p id="resultado">Sueldo líquido:</p>
             </div>
 
         </section>
@@ -99,7 +98,7 @@
             <img src="IMG/emX3enWZ_400x400.png" alt="">
         </div>
     </article>
-    <script src="js/sueldobase.js"></script>
+    <script src="js/sueldoliquido.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>

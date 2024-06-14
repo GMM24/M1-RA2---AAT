@@ -42,6 +42,8 @@ var divResultado = document.getElementById('resultado');
 var ganado = document.getElementById('totalGanado');
 var descuento = document.getElementById('totalDescuentos');
 var calculoigss = document.getElementById('igss');
+var btnTotales = document.getElementById('btnCalcular');
+btnTotales.addEventListener('click', Totales);
 function obtenerDatos() {
     sueldoLiquido.asignarIgss();
     sueldoLiquido.asignarSalario(parseFloat(document.getElementById('salario').value));

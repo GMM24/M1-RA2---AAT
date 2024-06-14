@@ -48,7 +48,9 @@ const sueldoLiquido = new SueldoLiquido();
 let divResultado = document.getElementById('resultado') as HTMLParagraphElement;
 const ganado = document.getElementById('totalGanado') as HTMLParagraphElement;
 const descuento = document.getElementById('totalDescuentos') as HTMLParagraphElement;
-const calculoigss= document.getElementById('igss') as HTMLInputElement;
+const calculoigss= document.getElementById('igss') as HTMLParagraphElement;
+const btnTotales = document.getElementById ('btnCalcular') as HTMLButtonElement;
+btnTotales.addEventListener('click', Totales);
 
 function obtenerDatos(){
     sueldoLiquido.asignarIgss();

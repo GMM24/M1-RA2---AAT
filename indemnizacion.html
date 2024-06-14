@@ -36,11 +36,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                  <a class="nav-link active" aria-current="page" href="sueldobase.html">Sueldo Líquido</a>
-                  <a class="nav-link active" aria-current="page" href="indemnizacion.html">Indemnización</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="sueldoliquido.html">Sueldo Líquido</a>
+                    <a class="nav-link active" aria-current="page" href="Indemnizacion.html">Indemnización</a>
                 </div>
-              </div>
+            </div>
         </div>
     </nav>
     <article class="d-flex">
@@ -61,7 +61,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="bono14Proporcional" class="form-label ">Bono 14 Proporcional</label>
-                        <input type="number" class="form-control" id="bono14Proporcional">
+                        <input type="number" class="form-control" id="bonoProporcional">
 
                     </div>
                     <div class="mb-3 ">
@@ -80,20 +80,19 @@
 
 
                 </form>
-                <button type="button" class=" btn btn-primary border bordered-1" id="btnCalcular">Calcular
+                <button type="button" class=" btn btn-primary border bordered-1" id="btnCalcular" onclick="Datos()">Calcular
                     indemnización</button>
                 <div>
-                    <p class="fw-light">Total: <span id="indemnizacion"></span>
-                    </p>
+                    <p class="fw-light" id="resultado">Total:</p>
                 </div>
             </div>
         </section>
-        <div class="w-25 text-center">
-            <img src="IMG/emX3enWZ_400x400.png" alt="">
+        <div class=" text-center">
+            <img src="IMG/emX3enWZ_400x400.png" alt="" width="200px">
         </div>
     </article>
 
-    <script src="js/indemnizacion.js"></script>
+    <script src="js/Indemnizacion.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
